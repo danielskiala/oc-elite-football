@@ -70,7 +70,7 @@
                         <h4>4-2 v FK Jablonec (A) on 5 Aug 2021</h4>
                     </div>
 
-                    
+
                     <div class="ident-box">
                         <h3>Nationalités</h3>
                         <h4>4-2 v FK Jablonec (A) on 5 Aug 2021</h4>
@@ -79,8 +79,45 @@
             </div>
         </div>
 
-        <div class="jouer-photo">
-            
+        <div class="joueur-photos">
+            <div class="joueur-photo-content">
+                <swiper [config]="config_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="joueur-photo">
+                                <img src="../../../../assets/ressources/img/3.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="joueur-photo">
+                                <img src="../../../../assets/ressources/img/3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </swiper>
+
+                <div class="btn-buttons">
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17.621" height="27.492"
+                            viewBox="0 0 17.621 27.492">
+                            <path id="chevron-back-outline" d="M26.494,7.875,12.938,19.244,26.494,30.613"
+                                transform="translate(28.871 32.99) rotate(180)" fill="none" stroke="#00b700"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="3.375" />
+                        </svg>
+
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17.621" height="27.492"
+                            viewBox="0 0 17.621 27.492">
+                            <path id="chevron-back-outline" d="M26.494,7.875,12.938,19.244,26.494,30.613"
+                                transform="translate(-11.25 -5.498)" fill="none" stroke="#00b700" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="3.375" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -66,14 +66,14 @@
 
 .banner-wrapper .banner-text .bn-text .bn-number h1:nth-child(1) {
   font-size: 100px;
-  font-family:"Roboto-Black";
-  color:rgba(255, 255, 255, .3);
+  font-family: "Roboto-Black";
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.banner-wrapper .banner-text .bn-text .bn-number h1:nth-child(2){
-  font-size:40px;
-  font-family:"Roboto-Regular";
-  font-weight:normal;
+.banner-wrapper .banner-text .bn-text .bn-number h1:nth-child(2) {
+  font-size: 40px;
+  font-family: "Roboto-Regular";
+  font-weight: normal;
 }
 
 .bn-btn {
@@ -92,90 +92,157 @@
 }
 /*=====  End of Banner Wrapper  ======*/
 
-.jouer-single{
-  width:100%;
-  position:relative;
-  border:1px solid red;
-  margin-top:50px;
-  padding-bottom:30px;
+/**
+ *
+ * Joueur-single
+ *
+ */
+
+.jouer-single {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  padding-bottom: 30px;
 }
 
-.jouer-single .jouer-single-content{
-  width:100%;
+.jouer-single .jouer-single-content {
+  width: 100%;
 }
 
-.jouer-single-content .biography{
-    width:100%;
-    background:var(--white);
-    box-shadow:0px 4px 30px rgba(0, 0, 0, 0.185);
+.jouer-single-content .biography {
+  width: 100%;
+  background: var(--white);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.185);
 }
 
-.jouer-single-content .biography .biog-head{
-  width:100%;
-  background:var(--second-color-base);
-  color:var(--white);
-  padding:20px 30px;
-  position:relative;
+.jouer-single-content .biography .biog-head {
+  width: 100%;
+  background: var(--second-color-base);
+  color: var(--white);
+  padding: 20px 30px;
+  position: relative;
 }
 
-.jouer-single-content .biography .biog-head h1{
+.jouer-single-content .biography .biog-head h1 {
   text-transform: uppercase;
-  font-family:"Roboto-Black";
-  font-size:36px;
+  font-family: "Roboto-Black";
+  font-size: 36px;
 }
 
-.jouer-single-content .biography .biog-head .text-opac{
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
+.jouer-single-content .biography .biog-head .text-opac {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
   left: 0;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.jouer-single-content .biography .biog-head .text-opac h1{
-  font-size:90px;
+.jouer-single-content .biography .biog-head .text-opac h1 {
+  font-size: 90px;
   font-style: oblique;
-  opacity:.2;
+  opacity: 0.2;
 }
 
-.jouer-single-content .biography .biog-flex{
-  width:100%;
-  display:flex;
-  padding:30px;
+.jouer-single-content .biography .biog-flex {
+  width: 100%;
+  display: flex;
+  padding: 30px;
 }
 
 .jouer-single-content .biography .biog-flex .biog-descrip,
-.jouer-single-content .biography .biog-flex .biog-identity{
-  width:50%;
+.jouer-single-content .biography .biog-flex .biog-identity {
+  width: 50%;
 }
 
-.jouer-single-content .biography .biog-flex .biog-descrip .biog-desc-title h1{
-  font-size:40px;
+.jouer-single-content .biography .biog-flex .biog-descrip .biog-desc-title h1 {
+  font-size: 40px;
 }
 
-.jouer-single-content .biography .biog-flex .biog-descrip  .biog-desc-text{
-  margin-top:30px;
+.jouer-single-content .biography .biog-flex .biog-descrip .biog-desc-text {
+  margin-top: 30px;
 }
 
-.jouer-single-content .biography .biog-flex .biog-descrip  .biog-desc-text p{
-  line-height:24px;
+.jouer-single-content .biography .biog-flex .biog-descrip .biog-desc-text p {
+  line-height: 24px;
 }
 
-.jouer-single-content .biography .biog-flex .biog-identity{
-  padding:0 20px;
+.jouer-single-content .biography .biog-flex .biog-identity {
+  padding: 0 20px;
 }
 
-.jouer-single-content .biography .biog-flex .biog-identity .ident-box{
-  width:100%;
+.jouer-single-content .biography .biog-flex .biog-identity .ident-box {
+  width: 100%;
   display: flex;
-  justify-content:space-between;
-  align-items:center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.jouer-single-content .biography .biog-flex .biog-identity .ident-box h4{
-  color:var(--dark-green);
+.jouer-single-content .biography .biog-flex .biog-identity .ident-box h4 {
+  color: var(--dark-green);
 }
+
+.jouer-single .joueur-photo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/**
+ *
+ * Joueur-photo-slider
+ *
+ */
+
+.joueur-photos {
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+
+.joueur-photos  .joueur-photo-content{
+  width:900px;
+}
+
+.joueur-photos .swiper-wrapper .swiper-slide {
+  width:100% !important;
+}
+
+.joueur-photos .swiper-wrapper .swiper-slide img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.joueur-photos .btn-buttons{
+  width:100%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.joueur-photos .btn-buttons [class*="swiper-button-"]{
+  position:absolute;
+  width:50px;
+  height:50px;
+  background:var(--white);;
+  box-shadow:0px 0px 10px rgba(0, 0, 0, 0.144);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+  border-radius:50%;
+}
+
+.joueur-photos .btn-buttons .swiper-button-next{
+  right:0px;
+}
+/*=====  End of joueur-single  ======*/

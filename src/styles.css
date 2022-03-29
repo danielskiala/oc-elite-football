@@ -6,6 +6,7 @@
  *
  */
 
+@import "swiper/swiper.min.css";
 @import "assets/css/reset.css";
 @import "assets/css/font.css";
 @import "assets/fontello/css/fontello.css";
@@ -13,11 +14,8 @@
 @import "assets/css/component.css";
 @import "assets/css/respApp.css";
 
-
-
 /**
  *
  * Links Dashboard
  *
  */
-
