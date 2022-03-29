@@ -10,6 +10,7 @@ import { JoueursComponent } from './components/site/joueurs/joueurs.component';
 import { ManagerComponent } from './components/site/manager/manager.component';
 import { NavTeamsComponent } from './components/site/nav-teams/nav-teams.component';
 import { ActualitesComponent } from './components/site/actualites/actualites.component';
+import { JoueurSingleComponent } from './components/site/joueur-single/joueur-single.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ActualitesComponent } from './components/site/actualites/actualites.com
     JoueursComponent,
     ManagerComponent,
     NavTeamsComponent,
-    ActualitesComponent
+    ActualitesComponent,
+    JoueurSingleComponent
   ],
   imports: [
     BrowserModule,
