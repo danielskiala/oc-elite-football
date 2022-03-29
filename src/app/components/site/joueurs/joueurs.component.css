@@ -89,7 +89,6 @@
 
 .teams {
   width: 100%;
-  border: 1px solid red;
   position: relative;
   margin-top: 50px;
   padding-bottom: 30px;
@@ -98,7 +97,6 @@
 .teams .teams-content {
   width: 100%;
   position: relative;
-  border: 1px solid blue;
 }
 
 .teams .teams-content .teams-sections {
@@ -133,7 +131,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.712);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.13), rgba(0,0,0,.8));
   z-index: -10;
 }
 
@@ -162,11 +160,25 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
-  border: 1px solid red;
   display:flex;
   justify-content:space-between;
   align-items:center;
+  flex-direction:column;
   padding:0 10px;
+}
+
+.teams-sections .teams-flex .joueur-box .jouer-text .jouer-line{
+  width:100%;
+  height:1px;
+  background:linear-gradient(to right, var(--second-color-base), var(--first-color-base), var(--second-color-base));
+  margin-bottom:5px;
+}
+
+.teams-sections .teams-flex .joueur-box .jouer-text .jouer-bottom{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
 .teams-sections .teams-flex .joueur-box .jouer-text .name{
