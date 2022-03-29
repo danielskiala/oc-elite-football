@@ -1,0 +1,419 @@
+/**
+ *
+ * Banner-wrapper
+ *
+ */
+
+.banner-wrapper {
+  width: 100%;
+  height: calc(100vh - 30px);
+  position: relative;
+  background: url("../../../../assets/ressources/img/1.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 10;
+}
+
+.banner-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.603) 40%, #ff950070);
+  z-index: -10;
+}
+
+.banner-wrapper .banner-text .bn-text {
+  width: 750px;
+  color: var(--white);
+}
+
+.banner-wrapper .banner-text .bn-text .bn-date {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0px;
+  font-size: 15px;
+  position: relative;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-date::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to left,
+    var(--first-color-base),
+    var(--second-color-base)
+  );
+}
+
+.banner-wrapper .banner-text .bn-text .bn-date .text {
+  margin-left: 5px;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-date .text strong {
+  font-family: "Roboto-Regular";
+  color: var(--first-color-base);
+}
+
+.banner-wrapper .banner-text .bn-text .bn-title {
+  margin-top: 20px;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-title h1 {
+  font-size: 50px;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-title p {
+  margin-top: 20px;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-btn a {
+  display: inline-block;
+  font-family: "Roboto-Medium";
+  padding: 10px 15px;
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 50px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-btn a:hover {
+  background: var(--white);
+  color: var(--dark-green);
+}
+
+/*=====  End of Banner Wrapper  ======*/
+
+/**
+ *
+ * News-Home
+ *
+ */
+
+.news {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1080px;
+  margin: -60px auto 0;
+}
+
+.news .news-content {
+  background: var(--white);
+  padding: 20px 10px;
+  display: inline-flex;
+  width: 100%;
+  box-shadow: 0px -50px 20px rgba(0, 0, 0, 0.151);
+}
+
+.news .news-content .new-box {
+  width: calc(calc(100% / 4) - 10px);
+  margin-right: 5px;
+  margin-left: 5px;
+  position: relative;
+  color: var(--white);
+}
+
+.news .news-content .new-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.637) 70%, #ff950070);
+  width: 100%;
+  height: 100%;
+}
+
+.news .news-content .new-box .new-img {
+  width: 100%;
+  height: 100%;
+}
+
+.news .news-content .new-box .new-img img {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.news .news-content .new-box .new-text {
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+  z-index: 10;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.news .news-content .new-box .new-text .n-date {
+  display: inline-flex;
+  position: relative;
+}
+
+.news .news-content .new-box .new-text .n-date::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to left,
+    var(--first-color-base),
+    var(--second-color-base)
+  );
+}
+
+.news .news-content .new-box .new-text .n-date .text {
+  margin-left: 8px;
+}
+
+.news .news-content .new-box .new-text .n-date .text strong {
+  font-family: "Roboto-Regular";
+  color: var(--first-color-base);
+}
+
+.news .news-content .new-box .new-text .n-title {
+  margin-top: 20px;
+}
+
+.news .news-content .new-box .new-text .n-title h4 {
+  font-weight: normal;
+  font-family: "Roboto-Medium";
+}
+
+/*=====  End of News home  ======*/
+
+/**
+ *
+ * Math-team-home
+ *
+ */
+
+.math-team {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+.math-team .math-team-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.math-team .math-team-content .math-team-box {
+  width: 49%;
+  position: relative;
+}
+
+.math-team-content .math-team-bg-math {
+  width: 100%;
+  height: 480px;
+  background: url("../../../../assets/ressources/img/bg-math.jpg") no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+  border: 1px solid green;
+  padding: 20px 30px;
+}
+
+.math-team-content .math-team-bg-math .math-date {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: var(--white);
+  font-size: 17px;
+}
+
+.math-team-content .math-team-bg-math .math-date h1 {
+  font-family: "Roboto-Black";
+}
+
+.math-team-content .math-team-bg-math .math-date h3 {
+  margin: 4px 0;
+  font-family: "Roboto-Regular";
+  font-weight: normal;
+}
+
+.math-team-content .math-team-bg-math .team-line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    var(--second-color-base),
+    var(--first-color-base),
+    var(--second-color-base)
+  );
+}
+
+.math-team-content .math-meet {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.math-team-content .math-meet .team-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.math-team-content .math-meet .team-logo img {
+  width: 128px;
+  height: 128px;
+  display: block;
+  object-fit: cover;
+}
+
+.math-team-content .math-meet .team-logo h2 {
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 2px;
+}
+
+.math-team-content .math-meet .vs {
+  margin: 0 20px;
+}
+
+.math-team-content .math-meet .vs h1 {
+  font-family: "Roboto-Black";
+  color: var(--white);
+}
+
+/*=====  End of Math-team-home  ======*/
+
+/**
+ *
+ * oc-Elite tv
+ *
+ */
+
+.oc-elite-tv {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to bottom, #023a02, #0b720b 30%);
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.oc-elite-tv .oc-elite-tv-content {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.oc-elite-tv .oc-elite-tv-content h1 {
+  color: var(--white);
+}
+
+.oc-elite-tv .oc-elite-tv-content .oc-video,
+.oc-elite-tv .oc-elite-tv-content .oc-text {
+  width: 50%;
+  position: relative;
+}
+
+.oc-elite-tv .oc-elite-tv-content .oc-video .iframe {
+  width: 100%;
+  height: 420px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.oc-elite-tv .oc-elite-tv-content .oc-video iframe {
+  max-width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.oc-elite-tv .oc-elite-tv-content .oc-text {
+  padding: 70px 0 30px 30px;
+  color: var(--white);
+}
+
+.oc-elite-tv .oc-elite-tv-content .oc-text h2 {
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.oc-elite-tv .oc-elite-tv-content .oc-text p {
+  margin-top: 40px;
+  line-height: 25px;
+}
+
+/*=====  End of oc-elite-tv  ======*/
+
+/**
+ *
+ * oc-maillot
+ *
+ */
+
+.oc-maillot {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  padding: 30px 0;
+}
+
+.oc-maillot .oc-maillot-content{
+  width:100%;
+  position:relative;
+}
+
+.oc-maillot .oc-maillot-content .maillots{
+  width:100%;
+  display:flex;
+  margin-top:80px;
+
+}
+
+.oc-maillot .oc-maillot-content .maillots .maillot{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  margin-right:20px;
+}
+
+.oc-maillot .oc-maillot-content .maillots .maillot:last-child{
+  margin:0;
+}
+
+.oc-maillot .oc-maillot-content .maillots .maillot img{
+  min-width:100%;
+  max-width:100%;
+  min-height:100%;
+  max-height:100%;
+  display:block;
+}
+
+.oc-maillot .oc-maillot-content .maillots .maillot h3{
+  margin-top:40px;
+  text-transform:uppercase;
+  color:var(--dark-green);
+}
+/*=====  End of oc-maillot  ======*/
+
+

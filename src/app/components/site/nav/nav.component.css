@@ -1,0 +1,80 @@
+.nav-wrapper {
+  width: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:300;
+}
+
+.nav-wrapper.active{
+  background: linear-gradient(to bottom, var(--first-color-base), var(--second-color-base));
+}
+
+.nav-wrapper .nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrapper .nav .nav-links {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.nav-wrapper .nav .nav-links .nav-line {
+  display: block;
+  margin: 15px 0;
+  background: linear-gradient(to left, var(--first-color-base), var(--second-color-base));
+  width: 100%;
+  height: 1px;
+}
+
+.nav-wrapper .nav .nav-link-up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav-link-up .nav-up-title h3 {
+  text-transform: uppercase;
+  color:var(--white);
+  letter-spacing:1px;
+}
+
+.nav .nav-link-up .nav-up-sociaux {
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav-link-up .nav-up-sociaux a {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  line-height: 0px;
+  color:var(--white);
+  font-family:"Roboto-Medium";
+}
+
+.nav .nav-link-up .nav-up-sociaux a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav .nav-link-up .nav-up-sociaux a [class*="icon-"] {
+  margin-left:3px;
+}
+
+.nav .nav-link-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav-link-bottom a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Roboto-Medium";
+  color:var(--white);
+}
+
+.nav .nav-link-bottom a:not(:first-child) {
+  margin-left: 10px;
+}

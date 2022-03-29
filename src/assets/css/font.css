@@ -1,0 +1,35 @@
+/**
+ *
+ * Fonts Site App
+ *
+ */
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../ressources/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../ressources/fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../ressources/fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../ressources/fonts/roboto/Roboto-Black.ttf") format("truetype");
+  font-display: swap;
+}
+
+/**
+ *
+ * Fonts Site Dashboard
+ *
+ */

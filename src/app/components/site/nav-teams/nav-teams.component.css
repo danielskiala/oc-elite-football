@@ -1,0 +1,46 @@
+.nav-teams {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  background: var(--white);
+  padding: 30px 0;
+  box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.096);
+}
+
+.nav-teams .nav-teams-content {
+  width: 100%;
+}
+
+.nav-teams .nav-teams-links {
+  margin-top: 30px;
+}
+
+.nav-teams .nav-teams-links a {
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-right: 20px;
+  font-family: "Roboto-Medium";
+  font-size: 19px;
+  position:relative;
+}
+
+.nav-teams .nav-teams-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:3px;
+    background:var(--second-color-base);
+    transition:width .3s ease 0s;
+}
+
+.nav-teams .nav-teams-links a.active::after,
+.nav-teams .nav-teams-links a:hover::after{
+    width:100%;
+}
+
+.nav-teams .nav-teams-links a.active,
+.nav-teams .nav-teams-links a:hover {
+  color: var(--dark-green);
+}
