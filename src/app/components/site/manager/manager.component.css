@@ -181,6 +181,10 @@
     align-items:center;
   }
   
+  .teams-sections .teams-flex .joueur-box .jouer-text .manager-bottom{
+    padding-bottom:10px;
+  }
+
   .teams-sections .teams-flex .joueur-box .jouer-text .name{
     color:var(--white);
     text-transform:uppercase;
@@ -190,10 +194,22 @@
   .teams-sections .teams-flex .joueur-box .jouer-text .name p{
     margin:0;
   }
-  
+
+  .teams-sections .teams-flex .joueur-box .jouer-text .role-manager{
+    text-transform:capitalize;
+    /* margin:10px 0 0; */
+    display:block;
+    color:#ff9600;
+  }
+
   .teams-sections .teams-flex .joueur-box .jouer-text .logo img{
     width:60px;
     height:60px;
+  }
+
+  .teams-sections .teams-flex .joueur-box .jouer-text  .manager-role{
+      width:100%;
+      border:1px solid red;
   }
   /*=====  End of teams  ======*/
   
