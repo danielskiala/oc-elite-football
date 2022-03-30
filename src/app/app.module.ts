@@ -12,6 +12,8 @@ import { ManagerComponent } from './components/site/manager/manager.component';
 import { NavTeamsComponent } from './components/site/nav-teams/nav-teams.component';
 import { ActualitesComponent } from './components/site/actualites/actualites.component';
 import { JoueurSingleComponent } from './components/site/joueur-single/joueur-single.component';
+import { ActualiteSingleComponent } from './components/site/actualite-single/actualite-single.component';
+import { MathsComponent } from './components/site/maths/maths.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { JoueurSingleComponent } from './components/site/joueur-single/joueur-si
     ManagerComponent,
     NavTeamsComponent,
     ActualitesComponent,
-    JoueurSingleComponent
+    JoueurSingleComponent,
+    ActualiteSingleComponent,
+    MathsComponent
   ],
   imports: [
     BrowserModule,

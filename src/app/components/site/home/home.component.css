@@ -299,6 +299,34 @@
   color: var(--white);
 }
 
+.math-team-content  .btn-team{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:40px;
+}
+
+.math-team-content  .btn-team a{
+  display:flex;
+  align-items:center;
+  padding:12px 20px;
+  text-transform:uppercase;
+  font-family:"Roboto-Medium";
+  font-size:17px;
+  color:var(--white);
+  border:2px solid var(--white);
+  border-radius:50px;
+  line-height:0px;
+}
+.math-team-content  .btn-team a .icons-math{
+  margin-right:10px;
+}
+
+.math-team-content  .btn-team a:hover{
+  background:var(--white);
+  color:var(--dark-green);
+}
 /*=====  End of Math-team-home  ======*/
 
 /**

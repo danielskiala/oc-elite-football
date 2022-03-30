@@ -5,6 +5,8 @@ import { JoueursComponent } from './components/site/joueurs/joueurs.component';
 import { ManagerComponent } from './components/site/manager/manager.component';
 import { JoueurSingleComponent } from './components/site/joueur-single/joueur-single.component';
 import { ActualitesComponent } from './components/site/actualites/actualites.component';
+import { ActualiteSingleComponent } from './components/site/actualite-single/actualite-single.component';
+import { MathsComponent } from './components/site/maths/maths.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"site/home", pathMatch:"full"},
@@ -13,6 +15,8 @@ const routes: Routes = [
   {path:"site/joueurs", component:JoueursComponent},
   {path:"site/manager", component:ManagerComponent},
   {path:"site/joueur-single", component:JoueurSingleComponent},
+  {path:"site/actualite-single", component:ActualiteSingleComponent},
+  {path:"site/maths", component:MathsComponent},
   
 ];
 
