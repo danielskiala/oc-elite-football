@@ -107,8 +107,8 @@
    .math{
      width:100%;
      position:relative;
-     border:1px solid red;
      margin-top:60px;
+     padding-bottom:30px;
    }
 
    .math .math-content{
@@ -120,7 +120,14 @@
      display:flex;
      justify-content:space-between;
      align-items:center;
-     border:1px solid yellow;
+     background:var(--white);
+     box-shadow:0px 0px 30px rgba(0, 0, 0, 0.2);
+     padding:0 20px;
+     margin-bottom:30px;
+   }
+
+   .math .math-content .math-box .math-date h2{
+    color:var(--dark-green);
    }
 
    .math .math-content .math-box .math-date p{

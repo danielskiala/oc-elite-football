@@ -226,11 +226,10 @@
 
 .math-team-content .math-team-bg-math {
   width: 100%;
-  height: 480px;
+  height: 500px;
   background: url("../../../../assets/ressources/img/bg-math.jpg") no-repeat;
   background-size: cover;
   margin-top: 30px;
-  border: 1px solid green;
   padding: 20px 30px;
 }
 
@@ -326,6 +325,53 @@
 .math-team-content  .btn-team a:hover{
   background:var(--white);
   color:var(--dark-green);
+}
+
+.math-team-content .math-team-bg-math{
+  width:100%;
+}
+
+.math-team-content .math-team-bg-math .player-box{
+  width:100%;
+}
+
+.math-team-content .math-team-bg-math .player-box .player-text{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:var(--white);
+  text-transform: uppercase;
+}
+
+.math-team-content .math-team-bg-math .player-box .player-text span{
+  display:block;
+  font-size:20px;
+  margin-bottom:5px;
+}
+
+.math-team-content .math-team-bg-math .player-box .player-text  h1{
+  font-size:40px;
+  font-family:"Roboto-Black";
+}
+
+.math-team-content .math-team-bg-math .player-box .player-text  .pl-number h1{
+  font-size:55px;
+  font-family:"Roboto-Black";
+  opacity:.6;
+}
+
+.math-team-content .math-team-bg-math .player-box .player-img{
+  width:100%;
+  height:397px;
+}
+
+.math-team-content .math-team-bg-math .player-box .player-img img{
+  max-width:100%;
+  min-width:100%;
+  max-height:100%;
+  min-height:100%;
+  display:block;
 }
 /*=====  End of Math-team-home  ======*/
 
