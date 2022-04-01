@@ -21,10 +21,10 @@
 <div class="joueur-nav">
     <div class="joue-nav-content page-container">
         <div class="joue-links">
-            <a href="#gardien">gardiens</a>
-            <a href="#">défenseurs</a>
-            <a href="#">milieux de terrain</a>
-            <a href="#">attaquants</a>
+            <a (click)="gardienScroll(gardien)">gardiens</a>
+            <a (click)="defenseurScroll(defenseur)">défenseurs</a>
+            <a (click)="milieuxScroll(milieux)">milieux de terrain</a>
+            <a (click)="attanquantScroll(attaquants)">attaquants</a>
         </div>
     </div>
 </div>
@@ -35,7 +35,7 @@
 <!-- Joueurs -->
 <div class="teams">
     <div class="teams-content page-container">
-        <div class="teams-sections" id="gardien">
+        <div class="teams-sections" #gardien>
             <div class="teams-title">
                 <h1 class="default-title">gardiens</h1>
             </div>
@@ -88,7 +88,7 @@
         <!-- defenseur -->
         <!-- defenseur -->
 
-        <div class="teams-sections" id="defenseur">
+        <div class="teams-sections" #defenseur>
             <div class="teams-title">
                 <h1 class="default-title">défenseur</h1>
             </div>
@@ -252,7 +252,7 @@
 
         <!-- Milieux -->
         <!-- Milieux -->
-        <div class="teams-sections" id="milieux">
+        <div class="teams-sections" #milieux>
             <div class="teams-title">
                 <h1 class="default-title">milieux de terrain</h1>
             </div>
@@ -415,7 +415,7 @@
 
         <!-- Attanquants -->
         <!-- Attanquants -->
-        <div class="teams-sections" id="attaquants">
+        <div class="teams-sections" #attaquants>
             <div class="teams-title">
                 <h1 class="default-title">Attanquants</h1>
             </div>

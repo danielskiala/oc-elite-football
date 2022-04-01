@@ -91,6 +91,103 @@
 
 /*=====  End of Section Properties Default  ======*/
 
+/**
+ *
+ * Banner-wrapper
+ *
+ */
+
+ .banner-wrapper {
+  width: 100%;
+  height: calc(100vh - 30px);
+  position: relative;
+  background: url("../../assets/ressources/img/1.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 10;
+}
+
+.banner-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.603) 40%, #ff950070);
+  z-index: -10;
+}
+
+.banner-wrapper .banner-text .bn-text {
+  width: 750px;
+  color: var(--white);
+}
+
+.banner-wrapper .banner-text .bn-text .bn-date {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0px;
+  font-size: 15px;
+  position: relative;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-date::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to left,
+    var(--first-color-base),
+    var(--second-color-base)
+  );
+}
+
+.banner-wrapper .banner-text .bn-text .bn-date .text {
+  margin-left: 5px;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-date .text strong {
+  font-family: "Roboto-Regular";
+  color: var(--first-color-base);
+}
+
+.banner-wrapper .banner-text .bn-text .bn-title {
+  margin-top: 20px;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-title h1 {
+  font-size: 50px;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-title p {
+  margin-top: 20px;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-btn a {
+  display: inline-block;
+  font-family: "Roboto-Medium";
+  padding: 10px 15px;
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 50px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-btn a:hover {
+  background: var(--white);
+  color: var(--dark-green);
+}
+
+/*=====  End of Banner Wrapper  ======*/
+
+
 /*=============================================
 =            Section President Parle            =
 =============================================*/

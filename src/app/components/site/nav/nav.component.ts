@@ -12,4 +12,19 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showNav() {
+    const backLinks: any = document.querySelector('.back-links');
+    const body: any = document.querySelector('body');
+
+    body.classList.add('overflow');
+    backLinks.classList.add('active');
+  }
+
+  hiddenNav() {
+    const backLinks: any = document.querySelector('.back-links');
+    const body: any = document.querySelector('body');
+
+    body.classList.remove('overflow');
+    backLinks.classList.remove('active');
+  }
 }

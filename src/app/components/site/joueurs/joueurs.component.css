@@ -72,6 +72,7 @@
   color: var(--dark-green);
   margin-right: 20px;
   border-radius: 50px;
+  cursor:pointer;
 }
 
 .joue-nav-content .joue-links a:hover {

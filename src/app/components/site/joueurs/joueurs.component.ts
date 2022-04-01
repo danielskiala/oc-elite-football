@@ -12,4 +12,19 @@ export class JoueursComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  gardienScroll($element: any): void {
+    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  }
+
+  defenseurScroll($element: any): void {
+    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  }
+
+  milieuxScroll($element: any): void {
+    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  }
+
+  attanquantScroll($element: any): void {
+    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  }
 }
