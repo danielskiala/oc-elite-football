@@ -1,47 +1,7 @@
-/**
- *
- * Banner-wrapper
- *
- */
-
-.banner-wrapper {
-  width: 100%;
-  height:100vh;
-  position: relative;
-  background: url("../../../../assets/ressources/img/1.jpg");
-  background-size: cover;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  z-index: 10;
-}
-
-.banner-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.603) 40%, #ff950070);
-  z-index: -10;
-}
-
-.banner-wrapper .banner-text .bn-text {
-  width: 750px;
-  color: var(--white);
-}
-
-.banner-wrapper .banner-text .bn-text .bn-title {
-  margin-top: 20px;
-}
-
 .banner-wrapper .banner-text .bn-text .bn-title h1 {
+  text-transform:uppercase;
   font-size: 60px;
-  text-transform: uppercase;
 }
-
-/*=====  End of Banner Wrapper  ======*/
 
 /**
    *
@@ -72,7 +32,7 @@
   color: var(--dark-green);
   margin-right: 20px;
   border-radius: 50px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .joue-nav-content .joue-links a:hover {
@@ -113,11 +73,11 @@
 }
 
 .teams-sections .teams-flex .joueur-box {
-  background-size: cover;
+  background-size: 100% 100% !important;
   background-repeat: no-repeat;
   background-position: center center;
   width: calc(30.33% - 8px);
-  height: 420px;
+  height: 390px;
   margin: 0 4px 32px;
   position: relative;
   z-index: 10;
@@ -132,7 +92,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.014), rgba(0,0,0,.6));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.014),
+    rgba(0, 0, 0, 0.6)
+  );
   z-index: -10;
 }
 
@@ -148,7 +112,7 @@
   color: var(--white);
   padding: 10px 0 10px 20px;
   background: transparent;
-  transition:all .3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .teams-sections .teams-flex .joueur-box:hover .jouer-head {
@@ -161,39 +125,196 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-direction:column;
-  padding:0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px;
 }
 
-.teams-sections .teams-flex .joueur-box .jouer-text .jouer-line{
-  width:100%;
-  height:1px;
-  background:linear-gradient(to right, var(--second-color-base), var(--first-color-base), var(--second-color-base));
-  margin-bottom:5px;
+.teams-sections .teams-flex .joueur-box .jouer-text .jouer-line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    var(--second-color-base),
+    var(--first-color-base),
+    var(--second-color-base)
+  );
+  margin-bottom: 5px;
 }
 
-.teams-sections .teams-flex .joueur-box .jouer-text .jouer-bottom{
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+.teams-sections .teams-flex .joueur-box .jouer-text .jouer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.teams-sections .teams-flex .joueur-box .jouer-text .name{
-  color:var(--white);
-  text-transform:uppercase;
-  line-height:0px;
+.teams-sections .teams-flex .joueur-box .jouer-text .name {
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 0px;
 }
 
-.teams-sections .teams-flex .joueur-box .jouer-text .name p{
-  margin:0;
+.teams-sections .teams-flex .joueur-box .jouer-text .name p {
+  margin: 0;
 }
 
-.teams-sections .teams-flex .joueur-box .jouer-text .logo img{
-  width:60px;
-  height:60px;
+.teams-sections .teams-flex .joueur-box .jouer-text .logo img {
+  width: 60px;
+  height: 60px;
 }
 /*=====  End of teams  ======*/
+
+/*=============================================
+=            Responsive Joueurs            =
+=============================================*/
+
+@media screen and (max-width: 750px) {
+  .banner-wrapper .banner-text .bn-text .bn-title h1 {
+    font-size: 50px;
+  }
+
+  .joue-nav-content {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+  }
+
+  .joue-nav-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .joue-nav-content .joue-links {
+    display: inline-flex;
+    padding: 0 10px;
+  }
+
+  .joue-nav-content .joue-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 50px;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .joue-nav-content .joue-links a:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  /**
+   *
+   * teams
+   *
+   */
+
+  .teams {
+    width: 100%;
+  }
+
+  .teams .teams-content {
+    width: 100%;
+    position: relative;
+  }
+
+  .teams .teams-content .teams-sections .teams-flex {
+    width: 100%;
+    padding: 0 0 20px;
+    margin: 0px;
+    margin-top: 40px;
+  }
+
+  .teams-sections .teams-flex .joueur-box {
+    background-size: cover;
+    background-position: center center;
+    background-size: 100% 100% !important;
+    width: 100%;
+  }
+}
+
+
+/**
+ *
+ * Mobile small
+ *
+ */
+
+@media screen and (min-width:330px) and (max-width:375px){
+  .teams .teams-content .teams-sections .teams-flex {
+    width:100%;
+    margin:0;
+    margin-top:40px;
+  }
+
+  .teams-sections .teams-flex .joueur-box {
+    background-size: 100% 100% !important;
+    height: 360px;
+  }
+}
+
+
+/**
+ *
+ * Mobile very small
+ *
+ */
+
+
+@media screen and (max-width:320px){
+  .teams .teams-content {
+    width: 100%;
+    padding:0 10px;
+  }
+
+  
+  .teams .teams-content .teams-sections .teams-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding:0px;
+    margin: 0px;
+    margin-top:40px
+  }
+
+  .teams-sections .teams-flex .joueur-box {
+    background-size: 100% 100% !important;
+    height: 290px;
+  }
+}
+
+
+/**
+ *
+ * Tablette mini
+ *
+ */
+
+@media screen and (min-width:760px) and (max-width:900px){
+  .teams-sections .teams-flex .joueur-box {
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: calc(calc(100% / 3) - 8px);
+    height: 280px;
+  }
+}
+
+/**
+ *
+ * Tablette
+ *
+ */
+
+ @media screen and (min-width:901px) and (max-width:1090px){
+  .teams-sections .teams-flex .joueur-box {
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: calc(calc(100% / 3) - 8px);
+    height: 380px;
+  }
+}
+/*=====  End of Responsive Joueurs  ======*/

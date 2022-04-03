@@ -5,187 +5,253 @@
  */
 
 .banner-wrapper {
-    width: 100%;
-    height:100vh;
-    position: relative;
-    background: url("../../../../assets/ressources/img/1.jpg");
-    background-size: cover;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 10;
-  }
-  
-  .banner-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.603) 40%, #ff950070);
-    z-index: -10;
-  }
-  
-  .banner-wrapper .banner-text .bn-text {
-    width: 750px;
-    color: var(--white);
-  }
-  
-  .banner-wrapper .banner-text .bn-text .bn-title {
-    margin-top: 20px;
-  }
-  
-  .banner-wrapper .banner-text .bn-text .bn-title h1 {
-    font-size: 60px;
-    text-transform: uppercase;
-  }
-  
-  /*=====  End of Banner Wrapper  ======*/
-  
-  
-  /**
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../../../../assets/ressources/img/1.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 10;
+}
+
+.banner-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.603) 40%, #ff950070);
+  z-index: -10;
+}
+
+.banner-wrapper .banner-text .bn-text {
+  width: 750px;
+  color: var(--white);
+}
+
+.banner-wrapper .banner-text .bn-text .bn-title {
+  margin-top: 20px;
+}
+
+.banner-wrapper .banner-text .bn-text .bn-title h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+/*=====  End of Banner Wrapper  ======*/
+
+/**
    *
    * Nav-teams
    *
    */
-  .nav-teams {
-    width: 100%;
-    position: relative;
-    z-index: 100;
-    background: var(--white);
-    padding: 30px 0;
-    box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.096);
-  }
-  
-  .nav-teams .nav-teams-content {
-    width: 100%;
-  }
-  
-  .nav-teams .nav-teams-links {
-    margin-top: 30px;
-  }
-  
-  .nav-teams .nav-teams-links a {
-    text-transform: uppercase;
-    color: var(--color-text);
-    margin-right: 20px;
-    font-family: "Roboto-Medium";
-    font-size: 19px;
-    position:relative;
-  }
-  
-  .nav-teams .nav-teams-links a::after{
-      content:"";
-      position:absolute;
-      left:0;
-      bottom:-5px;
-      width:0%;
-      height:3px;
-      background:var(--second-color-base);
-      transition:width .3s ease 0s;
-  }
-  
-  .nav-teams .nav-teams-links a.active::after,
-  .nav-teams .nav-teams-links a:hover::after{
-      width:100%;
-  }
-  
-  .nav-teams .nav-teams-links a.active,
-  .nav-teams .nav-teams-links a:hover {
-    color: var(--dark-green);
-  }
-  /*=====  End of Nav-teams  ======*/
+.nav-teams {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  background: var(--white);
+  padding: 30px 0;
+  box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.096);
+}
 
-  
-  /**
+.nav-teams .nav-teams-content {
+  width: 100%;
+}
+
+.nav-teams .nav-teams-links {
+  margin-top: 30px;
+}
+
+.nav-teams .nav-teams-links a {
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-right: 20px;
+  font-family: "Roboto-Medium";
+  font-size: 19px;
+  position: relative;
+}
+
+.nav-teams .nav-teams-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background: var(--second-color-base);
+  transition: width 0.3s ease 0s;
+}
+
+.nav-teams .nav-teams-links a.active::after,
+.nav-teams .nav-teams-links a:hover::after {
+  width: 100%;
+}
+
+.nav-teams .nav-teams-links a.active,
+.nav-teams .nav-teams-links a:hover {
+  color: var(--dark-green);
+}
+/*=====  End of Nav-teams  ======*/
+
+/**
    *
    * Math
    *
    */
 
-   .math{
-     width:100%;
-     position:relative;
-     margin-top:60px;
-     padding-bottom:30px;
-   }
+.math {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+  padding-bottom: 30px;
+}
 
-   .math .math-content{
-     width:100%;
-   }
+.math .math-content {
+  width: 100%;
+}
 
-   .math .math-content .math-box{
-     width:100%;
-     display:flex;
-     justify-content:space-between;
-     align-items:center;
-     background:var(--white);
-     box-shadow:0px 0px 30px rgba(0, 0, 0, 0.2);
-     padding:0 20px;
-     margin-bottom:30px;
-   }
+.math .math-content .math-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
 
-   .math .math-content .math-box .math-date h2{
-    color:var(--dark-green);
-   }
+.math .math-content .math-box .math-date h2 {
+  color: var(--dark-green);
+}
 
-   .math .math-content .math-box .math-date p{
-     text-transform:uppercase;
-     font-size:15px;
-     margin:0;
-     margin-top:5px;
-     color:var(--grey-secondary);
-   }
+.math .math-content .math-box .math-date p {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 0;
+  margin-top: 5px;
+  color: var(--grey-secondary);
+}
 
-   .math .math-content .math-box .math-meet{
-     display:flex;
-   }
+.math .math-content .math-box .math-meet {
+  display: flex;
+}
 
-   .math .math-content .math-box .math-meet .math-team-logo{
-      display:flex;
-      align-items:center;
-   }
+.math .math-content .math-box .math-meet .math-team-logo {
+  display: flex;
+  align-items: center;
+}
 
-   .math .math-content .math-box .math-meet .math-team-logo h4{
-      text-transform:uppercase;
-      margin-right:10px;
-   }
+.math .math-content .math-box .math-meet .math-team-logo h4 {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
 
-   .math .math-content .math-box .math-meet .math-team-logo h4:last-child{
-     margin-right:0;
-     margin-left:10px;
-   }
+.math .math-content .math-box .math-meet .math-team-logo h4:last-child {
+  margin-right: 0;
+  margin-left: 10px;
+}
 
-   .math .math-content .math-box .math-meet .math-team-score{
-     display:flex;
-     align-items:center;
-     font-size:20px;
-     margin:0 20px;
-   }
-  
-   .math .math-content .math-box .math-meet .math-team-score h2{
-     margin-right:10px;
-   }
-  
-   .math .math-content .math-box .math-meet .math-team-score h2:last-child{
-     margin-right:0;
-   }
-  
-   .math .math-content .math-box .math-icon{
-     text-align:center;
-     text-transform:uppercase;
-     font-size:14px;
-     width:150px;
-   }
+.math .math-content .math-box .math-meet .math-team-logo .team-resp {
+  display: none;
+}
 
-   .math .math-content .math-box .math-icon p{
-     margin:0;
-   }
-   .math .math-content .math-box .math-icon svg{
-     width:30px;
-     height:30px;
-     margin-bottom:4px;
-     color:var(--dark-green);
-   }
-  
+.math .math-content .math-box .math-meet .math-team-logo img{
+  width:90px;
+  height:90px;
+  display:block;
+  object-fit:cover;
+}
+
+.math .math-content .math-box .math-meet .math-team-score {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.math .math-content .math-box .math-meet .math-team-score h2 {
+  margin-right: 10px;
+}
+
+.math .math-content .math-box .math-meet .math-team-score h2:last-child {
+  margin-right: 0;
+}
+
+.math .math-content .math-box .math-icon {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 150px;
+}
+
+.math .math-content .math-box .math-icon p {
+  margin: 0;
+}
+.math .math-content .math-box .math-icon svg {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 4px;
+  color: var(--dark-green);
+}
+
+@media screen and (max-width: 800px) {
+  /**
+     *
+     * banner-wrapper
+     *
+     */
+  .banner-wrapper {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .banner-wrapper .banner-text {
+    width: 100%;
+  }
+
+  .banner-wrapper .banner-text .bn-text {
+    width: 100%;
+  }
+
+  /*=====  End of banner-wrapper  ======*/
+
+  .math .math-content .math-box {
+    flex-direction: column;
+    padding:20px 10px;
+    align-items: center;
+  }
+
+  .math .math-content .math-box .math-date {
+    text-align: center;
+  }
+
+  .math .math-content .math-box .math-meet {
+    padding:10px 0;
+  }
+
+  .math .math-content .math-box .math-meet .math-team-logo {
+    flex-direction: column;
+  }
+
+  .math .math-content .math-box .math-meet .math-team-logo h4 {
+    margin: 0px;
+    font-size:14px;
+    text-align:center;
+  }
+
+  .math .math-content .math-box .math-meet .math-team-logo h4:last-child {
+    margin: 0;
+  }
+
+  .math .math-content .math-box .math-meet .math-team-logo .team-desk {
+    display: none;
+  }
+
+  .math .math-content .math-box .math-meet .math-team-logo .team-resp {
+    display: block;
+  }
+}

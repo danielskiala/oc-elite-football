@@ -1,207 +1,186 @@
 /**
  *
- * Banner-wrapper
- *
- */
-
- .banner-wrapper {
-    width: 100%;
-    height:100vh;
-    position: relative;
-    background: url("../../../../assets/ressources/img/1.jpg");
-    background-size: cover;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 10;
-  }
-  
-  .banner-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.603) 40%, #ff950070);
-    z-index: -10;
-  }
-  
-  .banner-wrapper .banner-text .bn-text {
-    width: 750px;
-    color: var(--white);
-  }
-  
-  .banner-wrapper .banner-text .bn-text .bn-date {
-    display: inline-flex;
-    align-items: center;
-    line-height: 0px;
-    font-size: 15px;
-    position: relative;
-  }
-  
-  .banner-wrapper .banner-text .bn-text .bn-date::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(
-      to left,
-      var(--first-color-base),
-      var(--second-color-base)
-    );
-  }
-  
-  .banner-wrapper .banner-text .bn-text .bn-date .text {
-    margin-left: 5px;
-  }
-  
-  .banner-wrapper .banner-text .bn-text .bn-date .text strong {
-    font-family: "Roboto-Regular";
-    color: var(--first-color-base);
-  }
-  
-  .banner-wrapper .banner-text .bn-text .bn-title {
-    margin-top: 20px;
-  }
-  
-  .banner-wrapper .banner-text .bn-text .bn-title h1 {
-    font-size: 50px;
-  }
-  
-  .banner-wrapper .banner-text .bn-text .bn-title p {
-    margin-top: 20px;
-  }
-  
-  .banner-wrapper .banner-text .bn-text .bn-btn a {
-    display: inline-block;
-    font-family: "Roboto-Medium";
-    padding: 10px 15px;
-    color: var(--white);
-    border: 2px solid var(--white);
-    border-radius: 50px;
-    background: transparent;
-    transition: all 0.3s ease 0s;
-    vertical-align: middle;
-  }
-  
-  .banner-wrapper .banner-text .bn-text .bn-btn a:hover {
-    background: var(--white);
-    color: var(--dark-green);
-  }
-  
-  /*=====  End of Banner Wrapper  ======*/
-
-
-/**
- *
  * Block comment
  *
  */
 
- .actualite-single{
-     width:100%;
-     margin-top: 50px;
-     padding-bottom:30px;
- }
+.actualite-single {
+  width: 100%;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
 
- .actualite-single .actu-single-content{
-     width:100%;
- }
+.actualite-single .actu-single-content {
+  width: 100%;
+}
 
- .actualite-single .actu-single-content .actu-singl-head{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
- }
+.actualite-single .actu-single-content .actu-singl-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
- .actualite-single .actu-single-content .actu-singl-head h2{
-     text-transform:uppercase;
-     font-size:14px;
- }
+.actualite-single .actu-single-content .actu-singl-head h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
 
- .actualite-single .actu-single-content .actu-singl-sociaux{
-     display:flex;
-     align-items:center;
- }
+.actualite-single .actu-single-content .actu-singl-sociaux {
+  display: flex;
+  align-items: center;
+}
 
- .actualite-single .actu-single-content .actu-singl-sociaux a{
-     display:flex;
-     justify-content:center;
-     align-items: center;
-     width:35px;
-     height: 35px;
-     margin-left:10px;
-     border-radius:50%;
-     line-height:0px;
-     background:var(--dark-green);
-     color:var(--white);
- }
+.actualite-single .actu-single-content .actu-singl-sociaux a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 50%;
+  line-height: 0px;
+  background: var(--dark-green);
+  color: var(--white);
+}
 
- .actualite-single .actu-single-content .actu-singl-text{
-     width:100%;
-     margin-top:40px;
- }
+.actualite-single .actu-single-content .actu-singl-text {
+  width: 100%;
+  margin-top: 40px;
+}
 
- .actualite-single .actu-single-content .actu-singl-text p{
-     line-height: 25px;
- }
+.actualite-single .actu-single-content .actu-singl-text p {
+  line-height: 25px;
+}
 
- /**
+/**
  *
  * Joueur-photo-slider
  *
  */
 
 .joueur-photos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 100px;
+}
+
+.joueur-photos .joueur-photo-content {
+  width: 900px;
+}
+
+
+.joueur-photos .joueur-photo-content  .joueur-photo{
+  width:100%;
+}
+
+.joueur-photos .swiper-wrapper .swiper-slide {
+  width: 100% !important;
+  height:100% !important;
+}
+
+.joueur-photos .swiper-wrapper .swiper-slide img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit:cover;
+  display:block;
+}
+
+.joueur-photos .btn-buttons {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:300;
+}
+
+.joueur-photos .btn-buttons [class*="swiper-button-"] {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: var(--white);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.144);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.joueur-photos .btn-buttons .swiper-button-next {
+  right: 0px;
+}
+/*=====  End of joueur-single  ======*/
+
+/*=============================================
+  =            Responsive Actualités            =
+  =============================================*/
+@media screen and (max-width: 750px) {
+  .actualite-single .actu-single-content .actu-singl-head {
     width: 100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:relative;
-    margin-top:100px;
+    flex-wrap: wrap;
   }
-  
-  .joueur-photos  .joueur-photo-content{
-    width:900px;
+
+  .actualite-single .actu-single-content .actu-singl-head h2 {
+    margin-bottom: 10px;
   }
-  
+
+  .joueur-photos .joueur-photo-content {
+    width: 100%;
+  }
+
   .joueur-photos .swiper-wrapper .swiper-slide {
-    width:100% !important;
+    width: 100% !important;
+    height:450px !important;
   }
-  
-  .joueur-photos .swiper-wrapper .swiper-slide img {
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-  }
-  
-  .joueur-photos .btn-buttons{
+
+  .joueur-photos .joueur-photo-content  .joueur-photo{
     width:100%;
-    position:absolute;
-    top:50%;
-    left:50%;
+    height:100%;
+  }
+
+  .joueur-photos .btn-buttons {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
-  
-  .joueur-photos .btn-buttons [class*="swiper-button-"]{
-    position:absolute;
-    width:50px;
-    height:50px;
-    background:var(--white);;
-    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.144);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    cursor:pointer;
-    border-radius:50%;
+}
+
+
+/**
+ *
+ * Mobile very small
+ *
+ */
+
+@media screen and (max-width:330px){
+  .joueur-photos .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+    height:350px !important;
   }
-  
-  .joueur-photos .btn-buttons .swiper-button-next{
-    right:0px;
+}
+
+/**
+ *
+ * Tablette
+ *
+ */
+
+ @media screen and (min-width:760px) and (max-width:900px){
+
+  .joueur-photos .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+    height:590px !important;
   }
-  /*=====  End of joueur-single  ======*/
-  
+
+}
+
+
+/*=====  End of Responsive Actualités  ======*/

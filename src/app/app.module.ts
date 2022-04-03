@@ -14,6 +14,7 @@ import { ActualitesComponent } from './components/site/actualites/actualites.com
 import { JoueurSingleComponent } from './components/site/joueur-single/joueur-single.component';
 import { ActualiteSingleComponent } from './components/site/actualite-single/actualite-single.component';
 import { MathsComponent } from './components/site/maths/maths.component';
+import { PresidentComponent } from './components/site/president/president.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MathsComponent } from './components/site/maths/maths.component';
     ActualitesComponent,
     JoueurSingleComponent,
     ActualiteSingleComponent,
-    MathsComponent
+    MathsComponent,
+    PresidentComponent
   ],
   imports: [
     BrowserModule,

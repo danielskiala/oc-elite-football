@@ -1,61 +1,67 @@
 <div class="nav-wrapper">
-    <div class="nav page-container">
-        <div class="nav-logo">
-            <img src="../../../../assets/ressources/logo/128x128.png" alt="oc-elite">
-        </div>
-        <div class="nav-links">
-            <div class="nav-link-up">
-                <div class="nav-up-title">
-                    <h3>Oc Elite site web officiel</h3>
-                </div>
-                <div class="nav-up-sociaux">
-                    <a href="#">
-                        <span class="label">facebook</span>
-                        <span class="icon-facebook"></span>
-                    </a>
-                    <a href="#">
-                        <span class="label">youtube</span>
-                        <span class="icon-youtube-play"></span>
-                    </a>
-                    <a href="#">
-                        <span class="label">instagram</span>
-                        <span class="icon-instagram"></span>
-                    </a>
-                </div>
+    <div class="nav">
+        <div class="nav-content page-container">
+            <div class="nav-logo">
+                <img src="../../../../assets/ressources/logo/128x128.png" alt="oc-elite">
             </div>
+            <div class="nav-links">
+                <div class="nav-link-up">
+                    <div class="nav-up-title">
+                        <h3>Oc Elite site web officiel</h3>
+                    </div>
+                    <div class="nav-up-sociaux">
+                        <a href="#">
+                            <span class="label">facebook</span>
+                            <span class="icon-facebook"></span>
+                        </a>
+                        <a href="#">
+                            <span class="label">youtube</span>
+                            <span class="icon-youtube-play"></span>
+                        </a>
+                        <a href="#">
+                            <span class="label">instagram</span>
+                            <span class="icon-instagram"></span>
+                        </a>
+                    </div>
+                </div>
 
-            <div class="nav-line"></div>
+                <div class="nav-line"></div>
 
-            <div class="nav-link-bottom">
-                <a routerLink="/site/home">Home</a>
-                <a routerLink="/site/actualite">Actualités</a>
-                <a routerLink="/site/joueurs">Equipes</a>
-                <a routerLink="/site/maths">Maths</a>
-                <a href="#">Oc-Elite tv</a>
+                <div class="nav-link-bottom">
+                    <a routerLink="/site/home">Home</a>
+                    <a routerLink="/site/president">Président</a>
+                    <a routerLink="/site/actualite">Actualités</a>
+                    <a routerLink="/site/joueurs">Equipes</a>
+                    <a routerLink="/site/maths">Maths</a>
+                    <a routerLink="/site/histoire">Histoire du club</a>
+                    <a href="#">Oc-Elite tv</a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="nav-responsive page-container">
-        <div class="nav-logo_toggle">
-            <div class="logo">
-                <img src="../../../../assets/ressources/logo/96x96.png" alt="oc-elite-football">
+        <div class="nav-head">
+            <div class="nav-logo_toggle">
+                <div class="logo">
+                    <img src="../../../../assets/ressources/logo/96x96.png" alt="oc-elite-football">
+                </div>
+                <div class="toggle" (click)="showNav()">
+                    <div class="icon-menu-2"></div>
+                </div>
             </div>
-            <div class="toggle" (click)="showNav()">
-                <div class="icon-menu-2"></div>
-            </div>
-        </div>
 
-        <div class="links-sociaux">
-            <a href="#">
-                <span class="icon-facebook"></span>
-            </a>
-            <a href="#">
-                <span class="icon-youtube-play"></span>
-            </a>
-            <a href="#">
-                <span class="icon-instagram"></span>
-            </a>
+            <div class="links-sociaux">
+                <a href="#">
+                    <span class="icon-facebook"></span>
+                </a>
+                <a href="#">
+                    <span class="icon-youtube-play"></span>
+                </a>
+                <a href="#">
+                    <span class="icon-instagram"></span>
+                </a>
+            </div>
         </div>
 
         <div class="back-links">
@@ -69,9 +75,11 @@
                 </div>
                 <div class="links">
                     <a routerLink="/site/home">Home</a>
+                    <a routerLink="/site/president">Président</a>
                     <a routerLink="/site/actualite">Actualités</a>
                     <a routerLink="/site/joueurs">Equipes</a>
                     <a routerLink="/site/maths">Maths</a>
+                    <a routerLink="/site/histoire">Histoire du club</a>
                     <a href="#">Oc-Elite tv</a>
                 </div>
 

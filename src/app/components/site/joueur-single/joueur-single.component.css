@@ -6,7 +6,7 @@
 
 .banner-wrapper {
   width: 100%;
-  height: calc(100vh - 30px);
+  height: 100vh;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat !important;
@@ -200,18 +200,18 @@
 
 .joueur-photos {
   width: 100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.joueur-photos  .joueur-photo-content{
-  width:900px;
+.joueur-photos .joueur-photo-content {
+  width: 900px;
 }
 
 .joueur-photos .swiper-wrapper .swiper-slide {
-  width:100% !important;
+  width: 100% !important;
 }
 
 .joueur-photos .swiper-wrapper .swiper-slide img {
@@ -219,30 +219,158 @@
   max-width: 100%;
   min-height: 100%;
   max-height: 100%;
+  object-fit: cover;
 }
 
-.joueur-photos .btn-buttons{
-  width:100%;
-  position:absolute;
-  top:50%;
-  left:50%;
+.joueur-photos .btn-buttons {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  z-index:100;
 }
 
-.joueur-photos .btn-buttons [class*="swiper-button-"]{
-  position:absolute;
-  width:50px;
-  height:50px;
-  background:var(--white);;
-  box-shadow:0px 0px 10px rgba(0, 0, 0, 0.144);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  cursor:pointer;
-  border-radius:50%;
+.joueur-photos .btn-buttons [class*="swiper-button-"] {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: var(--white);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.144);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
-.joueur-photos .btn-buttons .swiper-button-next{
-  right:0px;
+.joueur-photos .btn-buttons .swiper-button-next {
+  right: 0px;
 }
 /*=====  End of joueur-single  ======*/
+
+
+/*=============================================
+=            Responsive Joueur-single            =
+=============================================*/
+
+
+/*=====  End of Responsive Joueur-single  ======*/
+
+@media screen and (max-width: 750px) {
+  .banner-wrapper .banner-text .bn-text .bn-number h1:nth-child(1) {
+    font-size: 40px;
+  }
+
+  .banner-wrapper .banner-text .bn-text .bn-number h1:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .jouer-single-content .biography .biog-head h1 {
+    font-size: 26px;
+  }
+
+  .jouer-single-content .biography .biog-head .text-opac h1 {
+    font-size: 50px;
+  }
+
+  .jouer-single-content .biography .biog-flex {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .jouer-single-content .biography .biog-flex .biog-descrip,
+  .jouer-single-content .biography .biog-flex .biog-identity {
+    width: 100%;
+  }
+
+  .jouer-single-content .biography .biog-flex .biog-identity {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .jouer-single-content .biography .biog-flex .biog-identity .ident-box {
+    width: 100%;
+    /* flex-wrap: wrap; */
+    font-size:13px;
+  }
+
+  .jouer-single-content .biography .biog-flex .biog-identity .ident-box h3 {
+    margin-bottom:5px;
+    margin-right:8px;
+  }
+
+  .jouer-single-content .biography .biog-flex .biog-identity .ident-box h4{
+    display:inline-block;
+    width:50%;
+  }
+
+  .joueur-photos .joueur-photo-content {
+    width: 100%;
+  }
+
+  .joueur-photos .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+    height:450px !important;
+  }
+
+  .joueur-photos .joueur-photo-content  .joueur-photo{
+    width:100%;
+    height:100%;
+  }
+
+  .joueur-photos .btn-buttons {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:100;
+  }
+  
+}
+
+/**
+ *
+ * Mobile very small
+ *
+ */
+
+ @media screen and (max-width:330px){
+  .joueur-photos .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+  }
+}
+
+
+/**
+ *
+ * Tablette
+ *
+ */
+
+@media screen and (min-width:760px) and (max-width:900px){
+  .jouer-single-content .biography .biog-flex {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .jouer-single-content .biography .biog-flex .biog-descrip,
+  .jouer-single-content .biography .biog-flex .biog-identity {
+    width: 100%;
+  }
+
+  .joueur-photos .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+    height:590px !important;
+  }
+
+  
+  .jouer-single-content .biography .biog-flex .biog-identity {
+    width: 100%;
+    padding: 0px;
+  }
+
+}

@@ -7,6 +7,7 @@ import { JoueurSingleComponent } from './components/site/joueur-single/joueur-si
 import { ActualitesComponent } from './components/site/actualites/actualites.component';
 import { ActualiteSingleComponent } from './components/site/actualite-single/actualite-single.component';
 import { MathsComponent } from './components/site/maths/maths.component';
+import { PresidentComponent } from './components/site/president/president.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"site/home", pathMatch:"full"},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:"site/manager", component:ManagerComponent},
   {path:"site/joueur-single", component:JoueurSingleComponent},
   {path:"site/actualite-single", component:ActualiteSingleComponent},
+  {path: "site/president", component:PresidentComponent},
   {path:"site/maths", component:MathsComponent},
   
 ];

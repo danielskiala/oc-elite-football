@@ -47,6 +47,14 @@ export class HomeComponent implements OnInit {
       500: {
         slidesPerView: 1,
         spaceBetween: 30,
+      },
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 50,
+      },
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 50,
       }
     },
     loop: true,
